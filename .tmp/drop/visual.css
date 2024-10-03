@@ -1,0 +1,184 @@
+:root {
+  --header-bg-color: #4bacc6;
+  /*  default color */
+}
+:root {
+  --vertical-border-color: #d2a1f1;
+  /* Default vertical border color */
+}
+:root {
+  --horizontal-gridline-width: 1px;
+  /* Default horizontal gridline width */
+}
+:root {
+  --text-color: #333;
+  /* Define a custom property for text color */
+}
+:root {
+  --vertical-border-width: 1px;
+  /* Default horizontal gridline width */
+}
+/* XXX */
+td {
+  border-bottom: var(--horizontal-gridline-width) solid #ccc;
+}
+thead th {
+  background-color: var(--header-bg-color);
+}
+.no-gridline td {
+  border: none !important;
+}
+.td {
+  /* Other styles */
+  border-left-width: 1px solid var(--vertical-border-width);
+  border-right-width: 1px solid var(--vertical-border-width);
+}
+.table {
+  /* Other styles */
+  border-left-width: 1px solid var(--vertical-border-width);
+  border-right-width: 1px solid var(--vertical-border-width);
+}
+/* Adjust the text color of subcategory items to gray */
+.subcategory-row .subcategory-item {
+  color: gray;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* Add a little space to the left of subcategories */
+td.subcategory-cell {
+  padding-left: 5px;
+  /* Then adjust the value as needed */
+}
+.variance-chart {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.custom-visual-table td {
+  /* Add a border around the data cells */
+  padding: 8px;
+  /* Add padding for better appearance */
+}
+/* Align column headers */
+thead th {
+  text-align: center;
+}
+.visual {
+  color: #333;
+  /* Darker font color */
+}
+/* Align column headers */
+.budget-actual-cell {
+  text-align: center;
+  /* Center align text in budget and actuals cells */
+}
+/* Soft colors for variance bars */
+.rect.positive-variance rect {
+  fill: #050002;
+  /* Soft blue for positive variance */
+  opacity: 0.7;
+  /* Adjust opacity for a softer look */
+}
+.rect.negative-variance rect {
+  fill: lightcoral;
+  /* Soft red for negative variance */
+  opacity: 0.7;
+  /* Adjust opacity for a softer look */
+}
+th,
+td {
+  padding: 12px;
+  /* Increased padding for better spacing */
+  border-bottom: 2px solid #eaeaea;
+  /* Separate rows with a subtle border */
+}
+th {
+  text-align: left;
+}
+/* Category and subcategory styling */
+.category-cell {
+  background-color: #f4f5f8;
+  cursor: pointer;
+}
+/* Add padding for subcategories */
+.sub-category td:first-child {
+  font-style: italic;
+}
+/* Bold and colored main categories */
+.main-category {
+  background-color: #dae3e9;
+}
+/* Alternating row colors for readability */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+/* Highlight total parent rows */
+.total-parent-row {
+  background-color: #f2dede;
+  /* Red background color for highlighting */
+}
+/* Highlight subtotal rows */
+.total-row,
+.column-total-row {
+  background-color: #e9eff4;
+}
+/* Highlight the grand total row */
+.grand-total-row {
+  display: table-row !important;
+  /* This ensures that the row is always displayed as a row */
+}
+/* Hover effect on rows */
+tbody tr:not(.total-row):not(.column-total-row):hover {
+  background-color: #e0f3fa;
+}
+/* Scrolling container with rounded corners */
+.custom-visual-container {
+  max-height: 100%;
+  overflow: auto;
+  border-radius: 8px;
+}
+/* Formatting for currency and percentage columns */
+.currency,
+.percent-variance {
+  text-align: right;
+}
+/* Styles for negative and positive variance */
+.negative-variance {
+  color: #d9534f;
+}
+.variance-negative {
+  background-color: #f8d7da;
+}
+.positive-variance {
+  color: #5cb85c;
+}
+.variance-positive {
+  background-color: #d4edda;
+}
+/* Style for variance bars */
+.rect {
+  stroke-width: 1;
+  stroke: #333;
+  /* Add a border to the bars */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+}
+/* Enhanced font styling for '% Variance' */
+.percent-variance {
+  font-size: 16px;
+  /* Increased font size for better readability */
+  font-weight: bold;
+  /* Make it bold to stand out */
+}
+/* Align subcategory values to the right if the parent category item is blue */
+.blue-parent-category {
+  text-align: right;
+}
+
+
+/*# sourceMappingURL=https://localhost:8080/assets/visual.css.map*/

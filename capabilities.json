@@ -1,0 +1,451 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Category",
+      "name": "category",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Base Value Index",
+      "name": "baseValueIndex",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Comparison Value Index",
+      "name": "comparisonValueIndex",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "header": {
+      "displayName": "Header",
+      "properties": {
+        "headerColor": {
+          "displayName": "Header Text Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "headerThickness": {
+          "displayName": "Header Size",
+          "type": {
+            "numeric": true
+          }
+        },
+        "headerBackgroundColor": {
+          "displayName": "Background Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "lineAlignment": {
+          "type": {
+            "formatting": {
+              "alignment": true
+            }
+          }
+        }
+      }
+    },
+    "displayUnits": {
+      "displayName": "Display Units",
+      "properties": {
+        "displayUnitsProperty": {
+          "displayName": "Display Units",
+          "type": {
+            "formatting": {
+              "labelDisplayUnits": true
+            }
+          }
+        },
+        "currencyProperty": {
+          "displayName": "Currency",
+          "type": {
+            "enumeration": [
+              {
+                "value": "$",
+                "displayName": "$"
+              },
+              {
+                "value": "€",
+                "displayName": "€"
+              },
+              {
+                "value": "£",
+                "displayName": "£"
+              },
+              {
+                "value": "",
+                "displayName": "None"
+              }
+            ]
+          }
+        },
+        "decimalPlaces": {
+          "displayName": "Decimal Places",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "barChartSettings": {
+      "displayName": "Bar Chart Settings",
+      "properties": {
+        "barColor": {
+          "displayName": "Blue Color",
+          "description": "Select the color for the bars",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "blueBarColor": {
+          "displayName": "Red Bar Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "categorySettings": {
+      "displayName": "Category Settings",
+      "properties": {
+        "fontFamily": {
+          "displayName": "Font Family",
+          "type": {
+            "formatting": {
+              "fontFamily": true
+            }
+          }
+        },
+        "TextColor": {
+          "displayName": "Text Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": {
+            "numeric": true
+          }
+        },
+        "fontColor": {
+          "displayName": "Font Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "enableParentTotal": {
+          "displayName": "Enable Parent Total",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "grandTotalSettings": {
+      "displayName": "Grand Total Settings",
+      "properties": {
+        "fontFamily": {
+          "displayName": "Font Family",
+          "type": {
+            "formatting": {
+              "fontFamily": true
+            }
+          }
+        },
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": {
+            "numeric": true
+          }
+        },
+        "fontColor": {
+          "displayName": "Text Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "backgroundColor": {
+          "displayName": "Background Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "enableGrandTotal": {
+          "displayName": "Enable Grand Total",
+          "type": {
+            "bool": true
+          }
+        },
+        "lineAlignment": {
+          "type": {
+            "formatting": {
+              "alignment": true
+            }
+          }
+        }
+      }
+    },
+    "enablePercentageToRegularValue": {
+      "displayName": "Enable Percentage to Regular Value",
+      "properties": {
+        "enablePercentage": {
+          "displayName": "Enable Percentage",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "subcategorySettings": {
+      "displayName": "Subcategory Settings",
+      "properties": {
+        "fontFamily": {
+          "displayName": "Font Family",
+          "type": {
+            "formatting": {
+              "fontFamily": true
+            }
+          }
+        },
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": {
+            "numeric": true
+          }
+        },
+        "fontColor": {
+          "displayName": "Font Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "displayName": "Text Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "indentation": {
+          "displayName": "Indentation",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "valuesSettings": {
+      "displayName": "Values Style",
+      "properties": {
+        "fontFamily": {
+          "displayName": "Font Family",
+          "type": {
+            "formatting": {
+              "fontFamily": true
+            }
+          }
+        },
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": {
+            "numeric": true
+          }
+        },
+        "enablePercentage": {
+          "displayName": "Enable Percentage",
+          "type": {
+            "bool": true
+          }
+        },
+        "textColor": {
+          "displayName": "Text Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontColor": {
+          "displayName": "Font Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "lineAlignment": {
+          "type": {
+            "formatting": {
+              "alignment": true
+            }
+          }
+        }
+      }
+    },
+    "totalValuesSettings": {
+      "displayName": "Total Values Settings",
+      "properties": {
+        "fontFamily": {
+          "displayName": "Font Family",
+          "type": {
+            "formatting": {
+              "fontFamily": true
+            }
+          }
+        },
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": {
+            "numeric": true
+          }
+        },
+        "fontColor": {
+          "displayName": "Font Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "gridline": {
+      "displayName": "Gridline Settings",
+      "properties": {
+        "enableHorizontalGridline": {
+          "displayName": "Enable Horizontal Gridline",
+          "type": {
+            "bool": true
+          }
+        },
+        "horizontalGridlineColor": {
+          "displayName": "Horizontal Gridline Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "horizontalGridlineWidth": {
+          "displayName": "Horizontal Gridline Width",
+          "type": {
+            "numeric": true
+          }
+        },
+        "enableVerticalGridline": {
+          "displayName": "Enable Vertical Gridline",
+          "type": {
+            "bool": true
+          }
+        },
+        "verticalGridlineColor": {
+          "displayName": "Vertical Gridline Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "verticalGridlineWidth": {
+          "displayName": "Vertical Gridline Width",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    }
+  },
+  "privileges": [
+    {
+      "name": "WebAccess"
+    },
+    {
+      "name": "LocalStorage"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "categorical": {
+        "categories": {
+          "for": {
+            "in": "category"
+          },
+          "dataReductionAlgorithm": {
+            "window": {
+              "count": 10000
+            }
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "baseValueIndex"
+              }
+            },
+            {
+              "bind": {
+                "to": "comparisonValueIndex"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "supportsHighlight": true,
+  "supportsSynchronizingFilterState": true,
+  "advancedEditModeSupport": 2
+}
